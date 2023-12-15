@@ -1,0 +1,30 @@
+{
+  "name": "cypress_com_cucumber",
+  "version": "1.0.0",
+  "description": "testes automatizados frontend com BDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yasmin29/Cypress_Com_Cucumber.git"
+  },
+  "author": "Yasmin Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yasmin29/Cypress_Com_Cucumber/issues"
+  },
+  "homepage": "https://github.com/Yasmin29/Cypress_Com_Cucumber#readme",
+  "dependencies": {
+    "cypress": "^10.10.0"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^19.2.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "ts-loader": "^9.5.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/support/step_definitions/**/*.js"
+  }
+}
